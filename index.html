@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<title>Affinity Sidekick</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="files/deepdive.pdf" target="_blank" class="w3-bar-item w3-button">Deep Dive.</a>
+  <a href="files/demand.pdf" target="_blank" class="w3-bar-item w3-button">VA's Demand In The Market.</a>
+  <a href="files/offers.pdf" target="_blank" class="w3-bar-item w3-button">What We Can Offer.</a>
+  <a href="files/tools.pdf" target="_blank" class="w3-bar-item w3-button">Software & Tools We Use.</a>
+  <a href="files/subscribe.pdf" target="_blank"  class="w3-bar-item w3-button">How To Subscribe.</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-mw3ium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Affinity Sidekick</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+  <a href="#why us" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Why us?</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="files/affile.pdf" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Download</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Offers">Services<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="files/deepdive.pdf" target="_blank" class="w3-bar-item w3-button">Deep Dive.</a>
+      <a href="files/demand.pdf" target="_blank" class="w3-bar-item w3-button">VA's Demand In The Market.</a>
+      <a href="files/offers.pdf" target="_blank" class="w3-bar-item w3-button"><b>What We Can Offer</b></a>
+      <a href="files/tools.pdf" target="_blank" class="w3-bar-item w3-button"><b>Software & Tools We Use</b></a>
+      <a href="files/subscribe.pdf" target="_blank" class="w3-bar-item w3-button"><b>How To Subscribe</b></a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-mw3ium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#why us" class="w3-bar-item w3-button">Why us?</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="files/Affinity_Sidekick.pdf" target="_blank" class="w3-bar-item w3-button">Download</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="images/mainpic.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To w3.CSS">CHAT WITH US</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Welcome to our chat zone!</h4>
+      <h5>Click below link to chat with us <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, We are very cool</p>
+      <p>Go to our social media site <a class="w3-text-teal" href="link here">Affinity Sidekick</a> to know more about us!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Please like us</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2><b>LEADERSHIP TEAM</b></h2>
+<p>Affinity Sidekick was founded in March 2021 when three forward-thinking and business-oriented individuals – Tusing, Henry and Edward joined forces. The concept revolved around offering cost-efficient work and assistance for clients all over the globe. 
+  The catch and most crucial trait – everything should be done virtually, matching or possibly even exceeding the quality of work expected in-house. A couple of months later, Affinity Sidekicks can proudly claim that the idea and realization were successful. 
+  The ever-growing list of satisfied clients along with hundreds (if not thousands) saved by reducing labor costs for our partners proves the point Tusing, Henry and Edward were trying to make back in March 2021.</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="images/Thangrolien.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Thangrolien F Tusing</h3>
+  <p>Founder and Chief Executive Officer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/Edward.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Edward L Sanate</h3>
+  <p>Co-Founder & Chief Data Officer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/Henry.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Henry Lalramsiem</h3>
+  <p>Co-Fonder & Chief Operating Officer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/Judith.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Judith Lalruotkim</h3>
+  <p>Client Manager</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2><b>Are You Overwhelmed with Workload ?</b></h2>
+<h3>Get a Virtual Assistant Now!</h3>
+<p>Our reliable virtual assistants are a flexible resource that provide your company with the services new3w3 to address routine business processes
+    without requiring you to go through the task of onboarding a new employee. From real estate and insurance agents to lead generation and chat
+    support, you can count on Virtual Assistant Talent to provide top level virtual assistance services starting at just $699 per month.
+    Our aim is to make you feel like you have an in-house employee in just a click away. They also guarantee that their virtual assistant will always be
+    available on the phone during working hours and they will work in your preferred time zone.</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images/mission.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3><b>OUR MISSION:</b></h3>
+  <p>We aim to provide world-class reliable Virtual Office Assistants to business owners 
+    so they can save time and focus on their priorities and achieve work-life balance at 
+    the end of the day. Virtual Assistant Talent is inspired to make work-life balance 
+    truly attainable for all entrepreneurs as it doesn’t have to be a luxury only 
+    experienced by a few.</p>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images/assist.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3><b>WHAT VA'S CAN ASSIST YOU WITH:</b></h3>
+  <p>We specialize in creating back office teams and processes for the the following list of 
+    Technical and Non-Technical Virtual Assistants. We hire high-level dedicated employees who 
+    strive to provide the assistance you need! Not only professional support but also pro-active 
+    pieces of advice for your business. Each of us goes through a rigorous recruitment process 
+    and only a few works here.Our valuable talent pool consists of Marketing Specialists,Graphic 
+    Designers, Customer Support representatives, Customer Success Managers, Assistants, Business 
+    and Sales Representatives, Compliance Analysts, Data and Transaction Analysts, Market Researchers, 
+    Administrative Assistant Social Media Assistant, etc.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images/priorities.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3><b>CURRENT PRIORITIES:</b></h3>
+  <p>We are inspired to redefine the Virtual Assistant Service Industry by providing 
+    the cream of crop VA’s to our clients while providing competitive rates and packaged 
+    solutions that will fit their business needs and at the same time their budget. Affinity 
+    Sidekick is Unlimited Affinity Sidekick doesn't do hourly rates & calculations. 
+    Starting at just $699/month, you're able to get a truly unlimited assistant. 
+    For a low monthly fixed price, you're getting a dedicated team of assistants 
+    to work on as much as you'd like, much like having a full-time employee who is 
+    available to take on work for you whenever you need help.</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Wy us? -->
+<div class="w3-row-padding w3-center w3-padding-64" id="why us">
+  <h2><b>WHY US ?</b></h2>
+  <p><h3>We here at Affinity Sidekick combine our experience and expertise to get the clear picture of 
+    client requirements and strive to meet the client expectations by well- organized methodologies and 
+    well-planned strategies. Our passion towards our work motivates us to extend support. 
+    <cite><b>“Quality Service”</b> is our core value and we never compromise it. We implement world class 
+      standards and practices. All our VA's gone through marketing training for a period of one month 
+      so they can assist client better. Our ability to render services according to the specific needs 
+      of the customer and teamwork is our greatest strength.</cite></h3>
+  </p><br>
+  </div>
+  <!-- Pricing Row -->
+  <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+  <h2>PRICING</h2>
+    <p><h3>Choose a pricing plan that fits your needs.</h3></p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge"><b>LIMITED</b></p>
+        </li>
+        <li class="w3-padding-16"><b>4 Hrs/Day</b> Mon-Fri<blockquote>(Include 1 user)</blockquote></li>
+        <li class="w3-padding-16">Dedicated Assistant</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Work</li>
+        <li class="w3-padding-16">Account Manager</li>
+        <li class="w3-padding-16">Works Anywhere</li>
+        <li class="w3-padding-16">5 Minute Response Time</li>
+        <li class="w3-padding-16">Call & Text Wing, Mobile/Web Apps & Slack</li>
+        <li class="w3-padding-16"><b>--</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i>399</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><img src="images/bullet.svg"> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge"><b>BASIC</b></p>
+        </li>
+        <li class="w3-padding-16"><b>Available All Day</b>, Mon-Fri<blockquote>(Include 3 user)</blockquote></li>
+        <li class="w3-padding-16"><b>2 </b>Dedicated Assistant</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Work</li>
+        <li class="w3-padding-16">Account Manager</li>
+        <li class="w3-padding-16">Works Anywhere</li>
+        <li class="w3-padding-16">5 Minute Response Time</li>
+        <li class="w3-padding-16">Call & Text Wing, Mobile/Web Apps & Slack</li>
+        <li class="w3-padding-16"><b>Access to Experts</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i>699</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><img src="images/bullet.svg"> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge"><b>PRO</b></p>
+        </li>
+        <li class="w3-padding-16"><b>Available All Day</b>, Mon-Fri<blockquote>(Include 5 user)</blockquote></li>
+        <li class="w3-padding-16"><b>2 </b>Dedicated Assistant</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Work</li>
+        <li class="w3-padding-16">Account Manager</li>
+        <li class="w3-padding-16">Works Anywhere</li>
+        <li class="w3-padding-16">5 Minute Response Time</li>
+        <li class="w3-padding-16">Call & Text Wing, Mobile/Web Apps & Slack</li>
+        <li class="w3-padding-16"><b>Access to Experts</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i>1,399</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><img src="images/bullet.svg"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Email:service@affinitysidekick.com</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> Phone:+91(807)6461485</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> Website:www.affinitysidekick.com(UnderMaintenance</p>
+    </div>
+    
+    
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://formsubmit.co/eddiesanate@gmail.com" method ="POST" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input type="hidden" name="_subject" value="Affinity Website Visitor Email!">
+        <input type="hidden" name="_cc" value="siem@affinitysidekick.com, tusing@affinitysidekick.com">
+
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checkw3 name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+    <img src="#" class="w3-image w3-greyscale-min" style="width:100%;"> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7269.735914062532!2d93.6976048!3d24.35109185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374eb3a5d71e6cbd%3A0xfee8925a76f2a685!2sSielmat%2C%20Churachandpur%2C%20Manipur%20795128!5e0!3m2!1sen!2sin!4v1638971784778!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.google+.com" target="_blank" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a>
+  <p>Powered by <a href="#" target="_blank">Tepu-iTech</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Usw3 to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
